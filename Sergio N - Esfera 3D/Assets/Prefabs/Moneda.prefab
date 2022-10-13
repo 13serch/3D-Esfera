@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3390256603590383073}
   - component: {fileID: 3390256603590383074}
   - component: {fileID: 3390256603590383075}
-  - component: {fileID: 9138161545995983306}
   - component: {fileID: 7040244235800052464}
   m_Layer: 0
   m_Name: Moneda
@@ -98,19 +97,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!65 &9138161545995983306
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3390256603590383076}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000004, y: 2.0000017, z: 1.0000002}
-  m_Center: {x: 0.000000059604666, y: 5.139772e-14, z: -0.00000008940699}
 --- !u!54 &7040244235800052464
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class MovimientoBola : MonoBehaviour
 
     public float velocidadMovimiento = 1.5f;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +24,28 @@ public class MovimientoBola : MonoBehaviour
     void Update()
     {
 
-        movimientoEjeX = Input.GetAxis("Horizontal") * Time.deltaTime * velocidadMovimiento;
-        movimientoEjeZ = Input.GetAxis("Vertical") * Time.deltaTime * velocidadMovimiento;
+        movimientoEjeX = -Input.GetAxis("Horizontal") * Time.deltaTime * velocidadMovimiento;
+        movimientoEjeZ = -Input.GetAxis("Vertical") * Time.deltaTime * velocidadMovimiento;
         transform.Translate(movimientoEjeX, movimientoEjeY, movimientoEjeZ);
 
     }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Moneda")
+        {
+            collision.gameObject.SetActive(false);
+
+
+
+        }
+
+    }
+
+
+
+
+
 }
+

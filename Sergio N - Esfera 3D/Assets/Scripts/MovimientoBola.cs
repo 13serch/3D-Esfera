@@ -12,7 +12,7 @@ public class MovimientoBola : MonoBehaviour
 
     public float velocidadMovimiento = 1.5f;
 
-    
+  
 
     // Start is called before the first frame update
     void Start()
